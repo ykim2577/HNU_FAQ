@@ -227,23 +227,160 @@ nav .nav-wrapper{
 .contents .title_container {
 	padding: 8.5rem 0 6.5rem 0;
 }
-.contents .title_container h2{
+.contents .title_container h2 {
 	font-size: 3.8rem;
+}
+.contents .title_container h2,
+.contents .title_container .sub_page_titles, 
+.contents .title_container .sub_page_btn li {
+	float: left;
 }
 .contents .title_container:after {
 	content: "";
 	display: block;
 	clear: both;
 }
-.contents .title_container .sub_page_titles {
-	float: left;
-}
+
 .contents .title_container .sub_page_btn {
 	float: right;
 }
+.contents .title_container .sub_page_btn li:not(:last-of-type) a {
+	border-right: none;
+}
+.contents .title_container .sub_page_btn li a{
+	border: 1px solid #e1e1e1;
+	padding: 1rem;
+}
+.contents .title_container .sub_page_btn li .position_btn{
+	vertical-align: super;
+}
 
+.contents .tab_list ul {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+.contents .tab_list ul li {
+	display: table-cell;
+	width: calc(100%/8);
+	text-align: center;
+	padding: 0 1rem;
+	border: 1px solid #e1e1e1;
+	box-sizing: border-box;
 
-
+}
+.contents .tab_list ul li a {
+	display: inline-block;
+	font-size: 1.6rem;
+	word-break: keep-all;
+	vertical-align: middle;
+	width: 100%;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}	
+.contents .tab_list ul li:not(:last-of-type) {
+	border-right: none;
+}
+.contents .question_box .q {
+	display: block;
+	line-height: 7.5rem;
+	width: 100%;
+	border-bottom: 1px solid #e1e1e1;
+}
+.contents .question_box .a {
+	padding: 3rem 0;
+	display: inline-block;
+	width: 100%;
+	background: #e1e1e1;
+	box-sizing: border-box;
+	font-size: 1.8rem;
+}
+.contents .question_box .a .answer {
+	display: inline-block;
+	width: 68%;
+}
+.contents .question_box .q a:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.contents .question_box .question {
+	font-size: 2rem;
+}
+.contents .question_box .q_icon,
+.contents .question_box .a_icon {
+	margin: 0 1.5rem 0 3rem;
+}
+.contents .question_box .theme_icon {
+	margin: 0 2rem 0 1.5rem;
+}
+.contents .question_box .a .a_icon,
+.contents .question_box .q a,
+.contents .question_box .q_icon,
+.contents .question_box .theme_icon,
+.contents .question_box .question {
+	float: left;
+}
+.contents .question_box .right_arrow {
+	float: right;
+	background: url(../images/down_arrow.png)no-repeat center;
+	width: 2.2rem;
+	margin-right: 4rem;
+	text-indent: -1000rem;
+}
+.contents .question_box .q_icon span,
+.contents .question_box .a_icon span {
+	display: inline-block;
+	width: 2.3rem;
+	height: 2.3rem;
+	text-indent: -1000rem;
+	vertical-align: text-bottom;
+}
+.contents .question_box .q_icon span {
+	background: url(../images/q.png)no-repeat center;
+	
+}
+.contents .question_box .a_icon span {
+	background: url(../images/a.png)no-repeat center;
+}
+.contents .question_box .theme_icon span {
+	display: inline-block;
+	box-sizing: border-box;
+	word-break: keep-all;
+	padding: 0.6rem 0.4rem;
+	width: 7.3rem;
+	border-radius: 2px;
+	font-size: 1.3rem;
+	line-height: 1.4rem;
+	color: #fff;
+	text-align: center;
+}
+.contents .question_box .specific_icon span {
+	background-color: #917dff;
+	vertical-align: middle;
+} 
+.contents .question_box .graduate_icon span {
+	background-color: #2aafd8;
+}
+.contents .question_box .scheduled_icon span {
+	background-color: #1496ae;
+}
+.contents .question_box .nonschedule_icon span {
+	background-color: #006ec3;
+}
+.contents .question_box .all_icon span {
+	background-color: #02a07d;
+	vertical-align: middle;
+}
+.contents .question_box .transfer_icon span {
+	background-color: #5b39d5;
+}
+.contents .question_box .common_icon span {
+	background-color: #ff6c13;
+}
+.contents .question_box .etc_icon span {
+	background-color: #73819e;
+}	
 #wrapper footer {
 	max-width: 120rem;
 	margin: 0 auto;
