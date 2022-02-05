@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
   var on_off=false;
   $('.header_area').mouseenter(function () {
@@ -33,4 +34,5 @@ $(document).ready(function () {
 					$('.header_area .header_logo a').css('background','url(../images/white_logo.png) center no-repeat');
       };  
   });
+
 });  
