@@ -1,0 +1,144 @@
+
+.total_container .total_icon {
+	line-height: 4rem;
+}
+.total_container .list_search, 
+.total_container .search_box {
+	float: right;
+}
+.total_container .list_search{
+	width: 48.5rem;
+}
+.total_container .search_box {
+	overflow: hidden;
+	height: 4rem;
+}
+.total_container .search_box input{
+	width: 32rem;
+	float: left;
+	box-sizing: border-box;
+}
+.total_container .search_box .search_bar, 
+.total_container .list_search .list_area {
+	height: 4rem;
+	border: 1px solid #e1e1e1;
+	outline: none;
+}
+.total_container .list_search .list_area {
+	width: 12rem;
+}
+.total_container .search_box .search_btn {
+	text-indent: 1000rem;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	width: 4rem;
+	height: 4rem;
+	background-color: #006ec2;
+	line-height: 50rem;
+	border: none;
+
+}
+.total_container .search_box .search_btn:before {
+	position: absolute;
+	content: "";
+	width: 1.8rem;
+	height: 1.8rem;
+	background: url(../images/search_glass.png)no-repeat center;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+table {
+	width: 100%;
+}
+table thead {
+	height: 5rem;
+	border-top: 2px solid #333;
+	border-bottom: 1px solid #999;
+	font-size: 1.4rem;
+	color: #666;
+}
+table tbody tr {
+	height: 7rem;
+	border-bottom: 0.1rem solid #e1e1e1;
+}
+table td:first-child {
+	font-size: 1.5rem;
+	color: #999;
+}
+table td:nth-child(n+4) {
+	font-size: 1.4rem;
+}
+table td:nth-child(4),
+table td:nth-child(5) {
+	color: #666;
+}
+
+table td:not(.item_left) {
+	text-align: center;
+}
+table .item_left {
+	font-size: 1.6rem;
+}
+table .item_left a {
+	position: relative;
+}
+table .item_left a:after {
+	position: absolute;
+	content: '';
+	display: inline-block;
+	background: url(../images/locker.png)no-repeat;
+	right: -2.5rem;
+	width: 1.8rem;
+	height: 2.2rem;
+}
+
+table tbody td 
+	.standby {
+		border: 1px solid #999;
+		box-sizing: border-box;
+		padding: 0.5rem 1rem;
+	}
+	.complete {
+		border: 1px solid #999;
+		box-sizing: border-box;
+		background: #999;
+		padding: 0.5rem 1rem;
+		color: #fff;
+	}
+	.theme_icon span {
+		display: inline-block;
+		box-sizing: border-box;
+		word-break: keep-all;
+		padding: 0.6rem 0.4rem;
+		width: 7.3rem;
+		border-radius: 2px;
+		font-size: 1.3rem;
+		line-height: 1.4rem;
+		color: #fff;
+		text-align: center;
+	}
+	.specific_icon span {
+		background-color: #917dff;
+		vertical-align: middle;
+	} 
+	.graduate_icon span {
+	background-color: #2aafd8;
+	}
+	.nonschedule_icon span {
+	background-color: #006ec3;
+	}
+	.all_icon span {
+		background-color: #02a07d;
+		vertical-align: middle;
+	}
+	.transfer_icon span {
+		background-color: #5b39d5;
+	}
+	.scheduled_icon span {
+		background-color: #1496ae;
+	}
+	.etc_icon span {
+		background-color: #73819e;
+	}	
