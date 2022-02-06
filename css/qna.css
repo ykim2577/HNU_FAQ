@@ -142,3 +142,22 @@ table tbody td
 	.etc_icon span {
 		background-color: #73819e;
 	}	
+	
+.pagination_area .page_inner {
+	position: relative;
+}
+.page_inner .q_box {
+	position: absolute;
+	right: 0;
+	top: 0;
+} 
+.page_inner .q_box .q_box_btn {
+	width: 14rem;
+	height: 5rem;
+	border: none;
+	background: #006ec2;
+	color: #fff;
+	font-size:1.8rem;
+	font-weight: medium;
+	cursor: pointer;
+}
