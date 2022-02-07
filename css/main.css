@@ -7,7 +7,6 @@
   left: 0;
   min-width: 1700px;
 }
-
 #wrapper .header_area:hover{
   background: #fff;
   height: 500px;
@@ -630,14 +629,55 @@ footer .footer_top:after{
   #wrapper .header_area {
     min-width: auto;
   }
+  #wrapper .header_area:hover {
+    height: 10rem;
+  }
   .nav {
     display: none;
   }
 }
 /*MOBILE*/
 @media screen and (max-width:768px) {
+  #wrapper .header_area {
+    height: 6rem;
+  }
   #wrapper .header_area:hover {
-    height: auto;
+    height: 10rem;
+  }
+  .header_logo a {
+    background: url(../images/white_logo_m.png)no-repeat;
+  }
+  .sub_background,
+  .sub_background:before {
+    height: 21rem;
+  }
+  .sub_background:before {
+    background-size: cover
+  }
+  .sub_background .sub_title {
+    padding: 8rem 0 8.5rem 0;
+        font-size: 3.1rem;
+  }
+  .sub_background .sub_inner a {
+    display: none;
+  }
+  .sub_background .sub_inner .sub_menu1, 
+  .sub_background .sub_inner .sub_menu2 {
+    width: 50%;
+    display: block;
+    height: 5rem;
+  }
+  .sub_background .sub_inner .sub_menu1 .menu1, 
+  .sub_background .sub_inner .sub_menu2 .menu2 {
+    width: 100%;
+    padding: 0rem 2rem;
+    line-height: 5rem;
+    text-align: left;
+    font-size: 1.3rem;
+  }
+  .sub_background .sub_inner .sub_menu1 .menu1:after, 
+  .sub_background .sub_inner .sub_menu2 .menu2:after {
+    top: 18px;
   }
   .contents .title_container,
   .tab_list,
@@ -690,7 +730,7 @@ footer .footer_top:after{
     margin: 0.25rem 1rem 0.25rem 1rem;
     padding: 0.5rem 1rem;
     line-height: 2rem;
-    display: inline-block;
+    /* display: inline-block; */
     color: #fff;
     float: left;
   }
