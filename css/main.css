@@ -222,7 +222,10 @@ nav .nav-wrapper{
 	margin: 0 auto;
 }
 .contents .title_container {
-	padding: 8.5rem 0 6.5rem 0;
+  padding: 8.5rem 2rem 6.5rem 2rem;
+}
+.contents .title_container .tab_list {
+  padding: 0 2rem;
 }
 .contents .title_container h2 {
 	font-size: 3.8rem;
@@ -271,9 +274,8 @@ nav .nav-wrapper{
 }
 .tab-content{
   display: none;  
-  padding: 15px 0;
+  padding: 1.5rem 2rem;
 }
-
 .tab-content.current{
   display: inherit;
 }
@@ -384,8 +386,10 @@ nav .nav-wrapper{
 	border-bottom: 1px solid #e3e3e3;
 }
 .contents .question_box .a .answer {
-	display: inline-block;
-	width: 68%;
+  width: calc(100% - 16rem);
+  margin: 0 7rem 0 9rem;
+  display: block;
+  text-align: left;
 }
 .contents .question_box .q a:after{
 	content: "";
@@ -401,7 +405,9 @@ nav .nav-wrapper{
 }
 .contents .question_box .theme_icon {
 	margin: 0 2rem 0 1.5rem;
+  /* color: #fff; */
 }
+
 .contents .question_box .a .a_icon,
 .contents .question_box .q a,
 .contents .question_box .q_icon,
@@ -433,43 +439,67 @@ nav .nav-wrapper{
 	background: url(../images/a.png)no-repeat center;
 }
 .contents .question_box .theme_icon span {
-	display: inline-block;
+  float: left;
 	box-sizing: border-box;
 	word-break: keep-all;
-	padding: 0.6rem 0.4rem;
-	width: 7.3rem;
+  margin-left: .5rem;
 	border-radius: 2px;
-	font-size: 1.3rem;
-	line-height: 1.4rem;
-	color: #fff;
 	text-align: center;
 }
-.contents .question_box .specific_icon span {
-	background-color: #917dff;
-	vertical-align: middle;
-} 
-.contents .question_box .graduate_icon span {
-	background-color: #2aafd8;
+
+/* .contents .question_box .theme_icon .question {
+  float: none;
+  display: block;
+  text-align: left;
+  width: calc(100% - 10rem);
+  margin: 0 5rem;
+  line-height: 3rem;
+} */
+.contents .question_box .theme_icon 
+  .specific_icon,
+  .all_icon,
+  .graduate_icon,
+  .scheduled_icon,
+  .nonschedule_icon,
+  .transfer_icon,
+  .common_icon,
+  .etc_icon {
+    float: left;
+    padding: 0.6rem 0.4rem;
+    width: 7.3rem;
+    color: #fff;
+    display: block;
+    line-height: 1.5rem;
+    margin-right: 1rem;
+    float: left;
 }
-.contents .question_box .scheduled_icon span {
-	background-color: #1496ae;
-}
-.contents .question_box .nonschedule_icon span {
-	background-color: #006ec3;
-}
-.contents .question_box .all_icon span {
-	background-color: #02a07d;
-	vertical-align: middle;
-}
-.contents .question_box .transfer_icon span {
-	background-color: #5b39d5;
-}
-.contents .question_box .common_icon span {
-	background-color: #ff6c13;
-}
-.contents .question_box .etc_icon span {
-	background-color: #73819e;
-}	
+.contents .question_box .theme_icon  
+  .specific_icon {
+    background-color: #917dff;
+  
+  } 
+  .all_icon {
+    background-color: #02a07d;
+  }
+  .graduate_icon {
+    background-color: #2aafd8;
+
+  }
+  .scheduled_icon {
+    background-color: #1496ae;
+  }
+  .nonschedule_icon {
+    background-color: #006ec3;
+  }
+  .transfer_icon {
+    background-color: #5b39d5;
+  }
+  .common_icon {
+    background-color: #ff6c13;
+  }
+  .etc_icon {
+    background-color: #73819e;
+  }	
 /* PAGINATION */
 .pagination_area {
 	padding: 4rem 0 12rem 0;
@@ -518,6 +548,7 @@ nav .nav-wrapper{
 /* FOOTER */
 #wrapper footer {
 	background: #333;
+  /* padding: 0 2rem; */
 }
 footer .footer_inner {
 	max-width: 120rem;
@@ -575,6 +606,9 @@ footer .footer_top:after{
 	border: 1px solid #999;
 	padding: 1.1rem 1rem;
 }
+.footer_top .footer_ad {
+  display: none;
+} 
 .footer_address .footer_left {
 	padding-top: 5rem;
 	padding-bottom: 7.5rem;
@@ -591,4 +625,117 @@ footer .footer_top:after{
 }
 .footer_address .footer_left p {
 	color: #666;
+}
+@media screen and (max-width:1600px) {
+  #wrapper .header_area {
+    min-width: auto;
+  }
+  .nav {
+    display: none;
+  }
+}
+/*MOBILE*/
+@media screen and (max-width:768px) {
+  #wrapper .header_area:hover {
+    height: auto;
+  }
+  .contents .title_container,
+  .tab_list,
+  .tab-content {
+    width: calc(100% - 6rem);
+    margin: 0 3rem;
+  }
+  .contents .tab_list ul {
+    display: block;
+  }
+  .contents .tab_list ul li {
+    width: auto;
+    display: block;
+  }
+  .tab-content {
+    padding: 1.5rem 0;
+  }
+
+  .contents .question_box .q_icon, .contents .question_box .a_icon {
+    margin: 0 1rem 0 2rem;
+  }
+  .contents .question_box .theme_icon {
+    float : none;
+  }
+  .contents .question_box .theme_icon .specific_icon,
+  .contents .question_box .theme_icon .all_icon{
+    width: auto;
+    margin: 0.25rem 1rem 0.25rem 1rem;
+    padding: 0.5rem 1rem;
+    line-height: 2rem;
+    float: left;
+  }
+  .contents .question_box .theme_icon span {
+    float: none;
+    display: block;
+    text-align: left;
+    width: calc(100% - 10rem);
+    margin: 0 5rem 0 5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 3rem;
+  }
+  .contents .question_box .theme_icon .transfer_icon,
+  .contents .question_box .theme_icon .graduate_icon,
+  .contents .question_box .theme_icon .nonschedule_icon,
+  .contents .question_box .theme_icon .scheduled_icon,
+  .contents .question_box .theme_icon .common_icon,
+  .contents .question_box .theme_icon .etc_icon{
+    width: auto;
+    margin: 0.25rem 1rem 0.25rem 1rem;
+    padding: 0.5rem 1rem;
+    line-height: 2rem;
+    display: inline-block;
+    color: #fff;
+    float: left;
+  }
+  .contents .question_box .a .answer {
+    display: block;
+    width: calc(100% - 12rem);
+    margin: 0 6rem;
+    /* width: 68%; */
+  }
+  footer .footer_top {
+    border: none;
+  }
+  .footer_top .footer_menu {
+    display: inline-block;
+    float: none;
+    width: 100%;
+  }
+  .footer_top .footer_menu li{
+    width: 50%;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+  }
+  .footer_top .footer_ad {
+    display: block;
+    float: left;
+    padding: 0.95rem 0;
+  } 
+  .footer_address .footer_left address .footer_num {
+    margin-left: 0;
+    display: block;
+  }
+}
+@media screen and (max-width:500px) {
+  #wrapper .header_area:hover {
+    height: auto;
+  }
+  .contents .tab_list ul {
+    display: block;
+  }
+  .contents .tab_list ul li {
+    width: auto;
+    display: block;
+  }
+
 }
