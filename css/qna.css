@@ -1,4 +1,22 @@
 
+.contents .question_box .theme_icon 
+.specific_icon,
+.all_icon,
+.graduate_icon,
+.scheduled_icon,
+.nonschedule_icon,
+.transfer_icon,
+.common_icon,
+.etc_icon {
+  float: none;
+  display: inline-block;
+}
+
+table td {
+  text-align: center;
+}
+
+table td
 .total_container .total_icon {
 	line-height: 4rem;
 }

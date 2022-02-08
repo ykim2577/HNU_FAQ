@@ -470,7 +470,6 @@ nav .nav-wrapper{
     display: block;
     line-height: 1.5rem;
     margin-right: 1rem;
-    float: left;
 }
 .contents .question_box .theme_icon  
   .specific_icon {
@@ -645,7 +644,9 @@ footer .footer_top:after{
     height: 10rem;
   }
   .header_logo a {
-    background: url(../images/white_logo_m.png)no-repeat;
+    /* background: url(../images/white_logo_m.png)no-repeat; */
+    width: 15.3rem;
+    height: 3.4rem;
   }
   .sub_background,
   .sub_background:before {
