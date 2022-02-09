@@ -413,17 +413,17 @@ nav .nav-wrapper{
   .common_icon,
   .etc_icon {
     float: left;
-    padding: 0.6rem 0.4rem;
+    /* padding: 0.6rem 0.4rem; */
     width: 7.3rem;
     color: #fff;
     display: block;
     line-height: 1.5rem;
     margin-right: 1rem;
-}
+  }
 .contents .question_box .theme_icon {
 	margin: 0 2rem 0 1.5rem;
   /* color: #fff; */
-}
+  }
 
 .contents .question_box .a .a_icon,
 .contents .question_box .q a,
