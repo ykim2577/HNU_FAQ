@@ -11,18 +11,15 @@
   .transfer_icon,
   .common_icon,
   .etc_icon {
-    /* padding: 0.6rem 0.4rem; */
     width: 7.3rem;
     color: #fff;
     line-height: 1.5rem;
     display: inline-block;
     background-color: transparent;
-    /* margin-left: 3rem;
-    margin-right: 3rem; */
   }
 
 table tbody .line_up_center {
-  padding: 0.6rem 0.4rem;
+  padding: 2.1rem 2.2rem 2.2rem;
 }
 
 table td
@@ -93,8 +90,7 @@ table thead {
 	color: #666;
 }
 table tbody tr {
-
-	/* height: 7rem; */
+	height: 7rem;
 	border-bottom: 0.1rem solid #e1e1e1;
 }
 table td:first-child {
@@ -116,6 +112,8 @@ table .item_left {
 }
 table tbody tr .item_cont {
 	position: relative;
+  font-size: 1.6rem;
+
 }
 table tbody tr .item_cont:after {
 	position: absolute;
