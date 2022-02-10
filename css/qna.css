@@ -1,79 +1,80 @@
-.contents.tab_list.tab_box {
-    display: none;
-}
-table tbody td
-    .specific_icon,
-    .all_icon,
-    .graduate_icon,
-    .scheduled_icon,
-    .nonschedule_icon,
-    .transfer_icon,
-    .common_icon,
-    .etc_icon {
-        width: 7.3 rem;
-        color: #fff;
-        line - height: 1.5 rem;
-        background - color: transparent;
-        float: left;
-        display: block;
-        margin: 0 2.1 rem;
-    }
 
-table tbody.line_up_center {
-    line - height: 4 rem;
+.contents .tab_list .tab_box {
+  display: none;
 }
-table tbody.drafter {
-    text - align: center;
-    width: 10.8 rem;
-}
-table tbody td: nth - child(4) {
-    width: 7.5 rem;
-}
-table tbody td: nth - child(5) {
-        width: 14.5 rem;
-    }
+  table tbody td 
+  .specific_icon,
+  .all_icon,
+  .graduate_icon,
+  .scheduled_icon,
+  .nonschedule_icon,
+  .transfer_icon,
+  .common_icon,
+  .etc_icon {
+    width: 7.3rem;
+    color: #fff;
+    line-height: 1.5rem;
+    background-color: transparent;
+    float: left;
+    display: block;
+    margin: 0 2.1rem;
+  }
 
-    .total_container.total {
-        line - height: 4 rem;
-        padding: 6.5 rem 0 3 rem 0;
-    }
+table tbody .line_up_center {
+  line-height: 4rem;
+}
+table tbody .drafter {
+  text-align: center;
+  width: 10.8rem;
+}
+table tbody td:nth-child(4) {
+  width: 7.5rem;
+}
+table tbody td:nth-child(5) {
+  width: 14.5rem;
+}
+
+.total_container .total {
+  line-height: 4rem;
+  padding: 6.5rem 0 3rem 0;
+}
 table td
-    .total_container.total_icon {
-        line - height: 4 rem;
-    }
-    .total_container.list_search,
-    .total_container.search_box {
-        float: right;
-    }
-    .total_container.list_search {
-        width: 48.5 rem;
-    }
-    .total_container.search_box {
-        overflow: hidden;
-        height: 4 rem;
-    }
-    .total_container.search_box input {
-        width: 32 rem;
-        float: left;
-        box - sizing: border - box;
-    }
-    .total_container.search_box.search_bar,
-    .total_container.list_search.list_area {
-        height: 4 rem;
-        border: 1 px solid #e1e1e1;
-        outline: none;
-    }
-    .total_container.list_search.list_area {
-        width: 12 rem;
-    }
-    .total_container.search_box.search_btn {
-        text - indent: 1000 rem;
-        position: relative;
-        display: inline - block;
-        overflow: hidden;
-        width: 4 rem;
-        height: 4 rem;
-        background - color: #006ec2;
+.total_container .total_icon {
+	line-height: 4rem;
+}
+.total_container .list_search, 
+.total_container .search_box {
+	float: right;
+}
+.total_container .list_search{
+	width: 48.5rem;
+}
+.total_container .search_box {
+	overflow: hidden;
+	height: 4rem;
+}
+.total_container .search_box input{
+	width: 32rem;
+	float: left;
+	box-sizing: border-box;
+}
+.total_container .search_box .search_bar, 
+.total_container .list_search .list_area {
+	height: 4rem;
+	border: 1px solid #e1e1e1;
+	outline: none;
+}
+.total_container .list_search .list_area {
+	width: 12rem;
+}
+.total_container .search_box .search_btn {
+	text-indent: 1000rem;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	width: 4rem;
+	height: 4rem;
+	background-color: #006ec2;
 	line-height: 50rem;
 	border: none;
 
@@ -99,22 +100,22 @@ table {
 
 table thead {
 	height: 5rem;
-	border-top: 2px solid # 333;
-        border - bottom: 1 px solid #999;
+	border-top: 2px solid #333;
+	border-bottom: 1px solid #999;
 	font-size: 1.4rem;
-	color: # 666;
-    }
-table thead tr th: nth - child(2) {
-    width: 12 rem;
+	color: #666;
+}
+table thead tr th:nth-child(2) {
+  width: 12rem;
 }
 table tbody tr {
-    font - size: 1.6 rem;
-    height: 7 rem;
-    border - bottom: 0.1 rem solid #e1e1e1;
+  font-size: 1.6rem;
+	height: 7rem;
+	border-bottom: 0.1rem solid #e1e1e1;
 }
-table td: first - child {
-    font - size: 1.5 rem;
-    color: #999;
+table td:first-child {
+	font-size: 1.5rem;
+	color: #999;
   text-align: center;
   width: 6.5rem;
 }
@@ -124,75 +125,75 @@ table td:nth-child(n+4) {
 }
 table td:nth-child(4),
 table td:nth-child(5) {
-	color: # 666;
+	color: #666;
 
 }
-table.item_left {
-    font - size: 1.6 rem;
+table .item_left {
+	font-size: 1.6rem;
 }
-table tbody tr.item_cont {
-    position: relative;
-
+table tbody tr .item_cont {
+	position: relative;
+  
 
 }
-table tbody tr.item_cont: after {
-    position: absolute;
-    content: '';
-    display: inline - block;
-    background: url(.. / images / locker.png) no - repeat;
-    right: -2.2 rem;
-    top: 0;
-    width: 1.8 rem;
-    height: 2.2 rem;
+table tbody tr .item_cont:after {
+	position: absolute;
+	content: '';
+	display: inline-block;
+	background: url(../images/locker.png)no-repeat;
+	right: -2.2rem;
+  top: 0;
+	width: 1.8rem;
+	height: 2.2rem;
 }
 
-table tbody td
-    .standby {
-        border: 1 px solid #999;
+table tbody td 
+	.standby {
+		border: 1px solid #999;
 		box-sizing: border-box;
 		padding: 0.5rem 1rem;
 	}
 	.complete {
-		border: 1px solid # 999;
-        box - sizing: border - box;
-        background: #999;
+		border: 1px solid #999;
+		box-sizing: border-box;
+		background: #999;
 		padding: 0.5rem 1rem;
-		color: # fff;
-    }
-    .theme_icon span {
-        display: inline - block;
-        box - sizing: border - box;
-        word - break: keep - all;
-        padding: 0.6 rem 0.4 rem;
-        width: 7.3 rem;
-        border - radius: 2 px;
-        font - size: 1.3 rem;
-        line - height: 1.4 rem;
-        color: #fff;
-        text - align: center;
-    }
-    .specific_icon span {
-        background - color: #917dff;
+		color: #fff;
+	}
+	.theme_icon span {
+		display: inline-block;
+		box-sizing: border-box;
+		word-break: keep-all;
+		padding: 0.6rem 0.4rem;
+		width: 7.3rem;
+		border-radius: 2px;
+		font-size: 1.3rem;
+		line-height: 1.4rem;
+		color: #fff;
+		text-align: center;
+	}
+	.specific_icon span {
+		background-color: #917dff;
 		vertical-align: middle;
 	} 
 	.graduate_icon span {
-	background-color: # 2 aafd8;
-    }
-    .nonschedule_icon span {
-        background - color: #006ec3;
+	background-color: #2aafd8;
+	}
+	.nonschedule_icon span {
+	background-color: #006ec3;
 	}
 	.all_icon span {
-		background-color: # 02 a07d;
-        vertical - align: middle;
-    }
-    .transfer_icon span {
-        background - color: #5b39d5;
+		background-color: #02a07d;
+		vertical-align: middle;
+	}
+	.transfer_icon span {
+		background-color: #5b39d5;
 	}
 	.scheduled_icon span {
-		background-color: # 1496 ae;
-    }
-    .etc_icon span {
-        background - color: #73819e;
+		background-color: #1496ae;
+	}
+	.etc_icon span {
+		background-color: #73819e;
 	}	
 	
 .pagination_area .page_inner {
@@ -207,22 +208,22 @@ table tbody td
 	width: 14rem;
 	height: 5rem;
 	border: none;
-	background: # 006 ec2;
-        color: #fff;
-        font - size: 1.8 rem;
-        font - weight: medium;
-        cursor: pointer;
-    }
+	background: #006ec2;
+	color: #fff;
+	font-size:1.8rem;
+	font-weight: medium;
+	cursor: pointer;
+}
 
-@media screen and(max - width: 768 px) {
-    table thead {
-        display: none;
-    }
-    table, tbody, tbody tr {
-        display: block;
-    }
-    table tbody {
-        border - top: 2 px solid #333;
+@media screen and (max-width:768px) {
+  table thead {
+    display: none;
+  }
+  table,tbody,tbody tr {
+    display: block;
+  }
+  table tbody {
+    border-top: 2px solid #333;
   }
   table tbody tr {
     position: relative;
@@ -246,19 +247,19 @@ table tbody td
     
   }
   table tbody td .complete {
-    color: # 006 ec2;
-    }
-    table tbody td: nth - child(1) {
-            display: none;
-        }
-        .total_container.list_search {
-            float: left;
-        }
+    color: #006ec2;
+  }
+  table tbody td:nth-child(1) {
+    display: none;
+  }
+  .total_container .list_search {
+    float: left;
+  } 
 
-        /* MOBILE_TAB */
+  /* MOBILE_TAB */
 
-        .contents.tab_list.tab_box {
-            border: 2 px solid #333;
+  .contents .tab_list .tab_box {
+    border: 2px solid #333;
     padding: 1rem 1.5rem;
     display: block;
     height: 4.5rem;
@@ -267,41 +268,41 @@ table tbody td
   }
   .contents .tab_list ul {
     display: none;
-    border: 1px solid # e1e1e1;
-            box - sizing: border - box;
-        }
-        .contents.tab_list ul li {
-            width: auto;
-            display: block;
-            text - align: left;
-            padding: 1 rem 1.5 rem;
-            height: 4.5 rem;
-            box - sizing: border - box;
-            background: none;
-            border - bottom: none;
-        }
-        .contents.tab_list ul.tabs li.current {
-            border: 1 px solid #e1e1e1;
-            border - bottom: none;
-        }
-        .contents.tab_list ul li a {
-            padding: 0;
-        }
-        .tab - content {
-            padding: 1.5 rem 0;
-        }
-    table tbody.drafter {
-            float: left;
-        }
-        .pagination_area {
-            padding: 3 rem 0 12 rem 0;
-        }
-        .page_inner.q_box {
-            position: static;
-            padding - bottom: 3.5 rem;
-        }
-        .page_inner.q_box.q_box_btn {
-            width: 100 % ;
-        }
+    border: 1px solid #e1e1e1;
+    box-sizing: border-box;
+  }
+  .contents .tab_list ul li {
+    width: auto;
+    display: block;
+    text-align: left;
+    padding: 1rem 1.5rem;
+    height: 4.5rem;
+    box-sizing: border-box;
+    background: none;
+    border-bottom: none;
+  }
+  .contents .tab_list ul.tabs li.current {
+    border: 1px solid #e1e1e1;
+    border-bottom: none;
+  }
+  .contents .tab_list ul li a {
+    padding: 0;
+  }
+  .tab-content {
+    padding: 1.5rem 0;
+  }
+  table tbody .drafter {
+    float: left;
+  }
+  .pagination_area {
+    padding: 3rem 0 12rem 0;
+}
+  .page_inner .q_box {
+    position: static;
+    padding-bottom: 3.5rem;
+  }
+  .page_inner .q_box .q_box_btn {
+    width: 100%;
+  }
 
 }
