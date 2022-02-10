@@ -411,10 +411,28 @@ nav .nav-wrapper{
 .contents .question_box .a_icon {
 	margin: 0 1.5rem 0 3rem;
 }
+
+.contents .question_box .theme_icon 
+  .specific_icon,
+  .all_icon,
+  .graduate_icon,
+  .scheduled_icon,
+  .nonschedule_icon,
+  .transfer_icon,
+  .common_icon,
+  .etc_icon {
+    float: left;
+    /* padding: 0.6rem 0.4rem; */
+    width: 7.3rem;
+    color: #fff;
+    display: block;
+    line-height: 1.5rem;
+    margin-right: 1rem;
+  }
 .contents .question_box .theme_icon {
 	margin: 0 2rem 0 1.5rem;
   /* color: #fff; */
-}
+  }
 
 .contents .question_box .a .a_icon,
 .contents .question_box .q a,
@@ -455,36 +473,11 @@ nav .nav-wrapper{
 	text-align: center;
 }
 
-/* .contents .question_box .theme_icon .question {
-  float: none;
-  display: block;
-  text-align: left;
-  width: calc(100% - 10rem);
-  margin: 0 5rem;
-  line-height: 3rem;
-} */
-.contents .question_box .theme_icon 
-  .specific_icon,
-  .all_icon,
-  .graduate_icon,
-  .scheduled_icon,
-  .nonschedule_icon,
-  .transfer_icon,
-  .common_icon,
-  .etc_icon {
-    float: left;
-    padding: 0.6rem 0.4rem;
-    width: 7.3rem;
-    color: #fff;
-    display: block;
-    line-height: 1.5rem;
-    margin-right: 1rem;
-    float: left;
-}
+
 .contents .question_box .theme_icon  
   .specific_icon {
     background-color: #917dff;
-  
+
   } 
   .all_icon {
     background-color: #02a07d;
@@ -654,7 +647,9 @@ footer .footer_top:after{
     height: 10rem;
   }
   .header_logo a {
-    background: url(../images/white_logo_m.png)no-repeat;
+    /* background: url(../images/white_logo_m.png)no-repeat; */
+    width: 15.3rem;
+    height: 3.4rem;
   }
   .sub_background,
   .sub_background:before {
