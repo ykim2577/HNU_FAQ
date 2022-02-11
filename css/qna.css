@@ -18,6 +18,7 @@
     float: left;
     display: block;
     margin: 0 2.1rem;
+    line-height: 4rem;
   }
 
 table tbody .line_up_center {
@@ -227,24 +228,42 @@ table tbody td
   }
   table tbody tr {
     position: relative;
-
+    height: auto !important;
   }
   table tbody tr:after {
     content:'';
     display:block;
     clear:both;
   }
+  table tbody td 
+  .specific_icon, 
+  .all_icon, 
+  .graduate_icon, 
+  .scheduled_icon, 
+  .nonschedule_icon, 
+  .transfer_icon, 
+  .common_icon, 
+  .etc_icon {
+    margin: 0 2.1rem 0 0;
+    line-height: initial;
+  }
+  table tbody td:nth-child(4) {
+    padding: 1rem 2rem 1rem 0;
+  }
   table td:nth-child(5) {
     position: absolute;
     top: 0;
     right: 0;
+    height: calc(100% - 4rem);
+    margin: 2rem 0;
+    line-height: 6rem;
   }
   table tbody td .standby,
   table tbody td .complete {
     padding: 0;
     border: 0;
     background: none;
-    
+    font-size: 1.3rem;
   }
   table tbody td .complete {
     color: #006ec2;
@@ -252,9 +271,31 @@ table tbody td
   table tbody td:nth-child(1) {
     display: none;
   }
+  table tbody .line_up_center {
+    word-break: keep-all;
+    line-height: 2.5rem;
+    display: block;
+    padding: 2rem 11.4rem 2rem 2rem;
+  }
   .total_container .list_search {
     float: left;
+    width: 100%;
   } 
+  .total_container .list_search .list_area {
+    width: 20%;
+  }
+  .total_container .search_box {
+    width: 78%;
+  }
+  .total_container .search_box .search_bar {
+    width: 88%;
+  }
+  .total_container .search_box .search_btn {
+    width: 12%;
+  }
+  
+
+
 
   /* MOBILE_TAB */
 
@@ -293,6 +334,12 @@ table tbody td
   }
   table tbody .drafter {
     float: left;
+    text-align: left;
+    width: auto;
+    /* width: 5.5rem; */
+    display: block;
+    padding: 1rem 1rem 1rem 2rem;
+
   }
   .pagination_area {
     padding: 3rem 0 12rem 0;
@@ -305,4 +352,26 @@ table tbody td
     width: 100%;
   }
 
+}
+
+@media screen and (max-width:500px) {
+  table tbody tr {
+    display: inline-table;
+  }
+  table tbody .line_up_center {
+    float: left;
+    width: 80%;
+    margin-left: 2rem;
+  }
+  /* table tbody td .transfer_icon {
+    margin : 0 1rem 0 0;
+  }
+  table tbody tr .item_cont {
+    display: block;
+    margin: 0 6.5rem 0 0;
+  }
+  table tbody .drafter {
+    float: left;
+  } */
+  
 }
