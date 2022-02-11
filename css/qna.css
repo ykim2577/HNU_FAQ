@@ -1,4 +1,3 @@
-
 .contents .tab_list .tab_box {
   display: none;
 }
@@ -134,8 +133,6 @@ table .item_left {
 }
 table tbody tr .item_cont {
 	position: relative;
-  
-
 }
 table tbody tr .item_cont:after {
 	position: absolute;
@@ -248,7 +245,8 @@ table tbody td
     line-height: initial;
   }
   table tbody td:nth-child(4) {
-    padding: 1rem 2rem 1rem 0;
+    padding: 0rem 2rem 1.5rem 0;
+    font-size: 1.2rem;
   }
   table td:nth-child(5) {
     position: absolute;
@@ -256,7 +254,7 @@ table tbody td
     right: 0;
     height: calc(100% - 4rem);
     margin: 2rem 0;
-    line-height: 6rem;
+    line-height: 4.5rem;
   }
   table tbody td .standby,
   table tbody td .complete {
@@ -275,11 +273,12 @@ table tbody td
     word-break: keep-all;
     line-height: 2.5rem;
     display: block;
-    padding: 2rem 11.4rem 2rem 2rem;
+    padding: 2rem 11.4rem 1rem 2rem;
   }
   .total_container .list_search {
     float: left;
     width: 100%;
+    padding-bottom: 2rem;
   } 
   .total_container .list_search .list_area {
     width: 20%;
@@ -338,7 +337,8 @@ table tbody td
     width: auto;
     /* width: 5.5rem; */
     display: block;
-    padding: 1rem 1rem 1rem 2rem;
+    padding: 0rem 1rem 1.5rem 2rem;
+    font-size: 1.2rem;
 
   }
   .pagination_area {
