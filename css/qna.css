@@ -17,7 +17,8 @@
     float: left;
     display: block;
     margin: 0 2.1rem;
-    line-height: 4rem;
+    /* line-height: 4rem; */
+    padding: 0rem 0.4rem;
   }
 
 table tbody .line_up_center {
@@ -194,13 +195,13 @@ table tbody td
 		background-color: #73819e;
 	}	
 	
-.pagination_area .page_inner {
+.pagination_area {
 	position: relative;
 }
 .page_inner .q_box {
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 4rem;
 } 
 .page_inner .q_box .q_box_btn {
 	width: 14rem;
@@ -241,9 +242,27 @@ table tbody td
   .transfer_icon, 
   .common_icon, 
   .etc_icon {
-    margin: 0 2.1rem 0 0;
-    line-height: initial;
+    margin: 0;
+    width: auto;
+    /* line-height: initial; */
   }
+  /* table tbody td .all_icon,
+  table tbody td .specific_icon {
+    width : auto;
+  } */
+  table tbody td .all_icon span,
+  table tbody td .specific_icon span {
+    width: auto;
+    line-height: 2rem;
+    float: left;
+    display: block;
+  }
+  table tbody td a {
+    display: block;
+    padding: 0 1rem 0 1rem;
+    line-height: 3.2rem;
+  }
+
   table tbody td:nth-child(4) {
     padding: 0rem 2rem 1.5rem 0;
     font-size: 1.2rem;
@@ -271,9 +290,9 @@ table tbody td
   }
   table tbody .line_up_center {
     word-break: keep-all;
-    line-height: 2.5rem;
+    line-height: 3.2rem;
     display: block;
-    padding: 2rem 11.4rem 1rem 2rem;
+    padding: 0.5rem 11.4rem 0.5rem 0;
   }
   .total_container .list_search {
     float: left;
@@ -337,13 +356,16 @@ table tbody td
     width: auto;
     /* width: 5.5rem; */
     display: block;
-    padding: 0rem 1rem 1.5rem 2rem;
+    padding: 0rem 1rem 1.5rem 1.5rem;
     font-size: 1.2rem;
 
   }
   .pagination_area {
     padding: 3rem 0 12rem 0;
-}
+  }
+  .pagination_area .page_inner {
+    width: 100%;
+  }
   .page_inner .q_box {
     position: static;
     padding-bottom: 3.5rem;
